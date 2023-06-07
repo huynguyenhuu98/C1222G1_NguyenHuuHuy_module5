@@ -13,17 +13,19 @@ export class StudentInfo extends Component {
     render() {
         return (
             <div>
-                <h2 style={{textAlign:"center"}}>Danh sách sinh viên</h2>
+                <h2 style={{textAlign: "center"}}>Danh sách sinh viên</h2>
                 <table className="table-bordered">
-                    <tr style={{textAlign:"center"}}>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Address</th>
-                    </tr>
+                    <thead>
+                        <tr style={{textAlign: "center"}}>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
                     <tbody>
                     {this.state.studentList.map((student, index) => (
-                        <tr key={index}>
+                        <tr>
                             <td>{student.id}</td>
                             <td>{student.name}</td>
                             <td>{student.age}</td>
