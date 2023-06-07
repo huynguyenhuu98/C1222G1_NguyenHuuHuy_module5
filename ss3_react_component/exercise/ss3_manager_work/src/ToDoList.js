@@ -9,10 +9,10 @@ export class ToDoList extends Component {
         }
     }
 
-    handleChange = (event) => {
+    handleChange (event) {
         this.setState({toDoName: event})
     }
-    handleAddItem = () => {
+    handleAddItem () {
         this.setState({
             toDoName: '',
             toDoList: [this.state.toDoName, ...this.state.toDoList]

@@ -25,7 +25,7 @@ export class StudentInfo extends Component {
                     </thead>
                     <tbody>
                     {this.state.studentList.map((student, index) => (
-                        <tr>
+                        <tr key={index}>
                             <td>{student.id}</td>
                             <td>{student.name}</td>
                             <td>{student.age}</td>

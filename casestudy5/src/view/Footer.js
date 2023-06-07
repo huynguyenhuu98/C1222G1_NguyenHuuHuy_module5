@@ -13,15 +13,6 @@ function Footer() {
                 <div>
                     <h6 style={{textAlign:"center"}}>© 2018 Furama Resort Danang.</h6>
                 </div>
-                {/*<div>*/}
-                {/*    <h4>Liên kết</h4>*/}
-                {/*    <ul>*/}
-                {/*        <li><a href="/">Trang chủ</a></li>*/}
-                {/*        <li><a href="/rooms">Phòng</a></li>*/}
-                {/*        <li><a href="/services">Dịch vụ</a></li>*/}
-                {/*        <li><a href="/about">Về chúng tôi</a></li>*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
             </div>
         </>
     );
