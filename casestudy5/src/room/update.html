@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Danh sách khách hàng</title>
+    <title>Sửa thông tin dịch vụ</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        .vc_custom_1533119100314 {
-            margin-top: -100px !important;
-            background-image: url(https://furamavietnam.com/wp-content/uploads/2018/08/banner01.jpg?id=1433) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            background-size: cover !important;
+        body {
+            background-image: url("https://furamavietnam.com/wp-content/uploads/2018/08/BG2.jpg");
+            background-position: right bottom;
         }
     </style>
 </head>
@@ -24,7 +21,7 @@
     <div class="fixed-top" style="background-color: #006633;color:white">
         <nav class="navbar navbar-expand-lg sticky">
             <div class="navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="#"
                                             class="nav-link">GIỚI THIỆU</a></li>
                     <li class="nav-item"><a href="#"
@@ -42,58 +39,71 @@
                     <li class="nav-item"><a href="#"
                                             class="nav-link">ƯU ĐÃI</a></li>
                 </ul>
-                <form class="d-flex me-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search"
-                           aria-label="Search"/>
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
         </nav>
     </div>
 </header>
-<div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid overflowUnset vc_custom_1533119100314 vc_row-has-fill" style="position: relative; left: 0px; box-sizing: border-box; padding-left: 0px; padding-right: 0px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h2 style="margin-top: 7rem;font-size: 40px;color: #ffffff;text-align: center;font-family:Playfair Display;font-weight:700;font-style:normal" class="vc_custom_heading">LOẠI PHÒNG</h2><div class="vc_empty_space" style="height: 102px"><span class="vc_empty_space_inner"></span></div>
-    <h2 style="font-size: 40px;color: #ffffff;text-align: center;font-family:Playfair Display;font-weight:700;font-style:normal" class="vc_custom_heading">LOẠI PHÒNG</h2><div class="vc_empty_space" style="height: 102px"><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div>
-<table class="table table-striped table-inverse table-responsive">
-    <thead class="thead-inverse">
-    <tr>
-        <th>Stt</th>
-        <th>Tên khách hàng</th>
-        <th>Năm sinh</th>
-        <th>Sđt</th>
-        <th>Địa chỉ</th>
-        <th>E-mail</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td scope="row">1</td>
-        <td>Nguyễn Văn A</td>
-        <td>20-05-1995</td>
-        <td>0835443443</td>
-        <td>Ngũ Hành Sơn - Đà Nẵng</td>
-        <td>nguyena@gmail.com</td>
-    </tr>
-    <tr>
-        <td scope="row">2</td>
-        <td>Nguyễn Thị B</td>
-        <td>10-05-1990</td>
-        <td>0929862826</td>
-        <td>Quảng Nam</td>
-        <td>nguyenthib@gmail.com</td>
-    </tr>
-    <tr>
-        <td scope="row">3</td>
-        <td>Nguyễn Khánh Đơn</td>
-        <td>09-07-1992</td>
-        <td>0911500914</td>
-        <td>Hồ Chính Minh</td>
-        <td>nguyendon@gmail.com</td>
-    </tr>
-    </tbody>
-</table>
 
-<footer>
+<h3 class="text-center" style="margin-top: 5rem">Sửa thông tin phòng</h3>
+<div class="row ms-1 mb-3" >
+    <div class="col-5" style="margin-left: 2rem">
+        <form>
+            <div class="form-group">
+                <label for="example1">Tên phòng</label>
+                <input type="email" class="form-control" id="example1" placeholder="PHÒNG SUPERIOR HƯỚNG HỒ">
+            </div>
+            <div class="form-group">
+                <label for="example2">Loại giường</label>
+                <select class="form-control" id="example2">
+                    <option>Giường đơn</option>
+                    <option>Giường đôi</option>
+                    <option>Hai giường</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="example3">Diện tích</label>
+                <input type="number" class="form-control" id="example3" placeholder="Diện Tích Phòng: 40.1 m2">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Loại phòng</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Diamond</option>
+                    <option>Gold</option>
+                    <option>Silver</option>
+                    <option>Copper</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Tính năng phòng</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Wifi</option>
+                    <option>Máy Giặt</option>
+                    <option>Máy Điều hòa</option>
+                    <option>Két sắt</option>
+                    <option>Minibar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="textarea1">Chi tiết phòng</label>
+                <textarea class="form-control" id="textarea1" rows="3"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Xác nhận</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-6">
+        <img width="738" height="390"
+             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg">
+    </div>
+</div>
+
+
+<footer >
     <div style="background-color: #a3d3e8; color: black;padding: 1rem">
         <div>
             <h3>Resort Furama Đà Nẵng</h3>

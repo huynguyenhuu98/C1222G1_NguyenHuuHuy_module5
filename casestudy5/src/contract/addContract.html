@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Sửa thông tin dịch vụ</title>
+    <title>Thêm mới hợp đồng</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        body {
+        body{
             background-image: url("https://furamavietnam.com/wp-content/uploads/2018/08/BG2.jpg");
             background-position: right bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
 </head>
-<body class="container-fluid">
+<body>
 <header>
     <div class="fixed-top" style="background-color: #006633;color:white">
         <nav class="navbar navbar-expand-lg sticky">
             <div class="navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="#"
                                             class="nav-link">GIỚI THIỆU</a></li>
                     <li class="nav-item"><a href="#"
@@ -39,58 +42,42 @@
                     <li class="nav-item"><a href="#"
                                             class="nav-link">ƯU ĐÃI</a></li>
                 </ul>
-                <form class="d-flex me-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search"
-                           aria-label="Search"/>
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
         </nav>
     </div>
 </header>
 
-<h3 class="text-center" style="margin-top: 5rem">Sửa thông tin phòng</h3>
-<div class="row ms-1" >
-    <div class="col-6 ">
+<h3 class="text-center" style="margin-top: 5rem">Thêm mới hợp đồng</h3>
+<div class="row ms-1 mb-3" >
+    <div class="col-5" style="margin-left: 2rem">
         <form>
             <div class="form-group">
-                <label for="example1">Tên phòng</label>
-                <input type="email" class="form-control" id="example1" placeholder="PHÒNG SUPERIOR HƯỚNG HỒ">
+                <label for="example1">Mã hợp đồng</label>
+                <input type="number" class="form-control" id="example1" >
             </div>
             <div class="form-group">
-                <label for="example2">Loại giường</label>
-                <select class="form-control" id="example2">
-                    <option>Giường đơn</option>
-                    <option>Giường đôi</option>
-                    <option>Hai giường</option>
-                </select>
+                <label for="example2">Tên khách hàng</label>
+                <input type="text" class="form-control" id="example2" >
             </div>
             <div class="form-group">
-                <label for="example3">Diện tích</label>
-                <input type="number" class="form-control" id="example3" placeholder="Diện Tích Phòng: 40.1 m2">
+                <label for="example3">Ngày bắt đầu</label>
+                <input type="date" class="form-control" id="example3" >
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Loại phòng</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Diamond</option>
-                    <option>Gold</option>
-                    <option>Silver</option>
-                    <option>Copper</option>
-                </select>
+                <label for="example4">Ngày kết thúc</label>
+                <input type="date" class="form-control" id="example4" >
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect2">Tính năng phòng</label>
-                <select class="form-control" id="exampleFormControlSelect2">
-                    <option>Wifi</option>
-                    <option>Máy Giặt</option>
-                    <option>Máy Điều hòa</option>
-                    <option>Két sắt</option>
-                    <option>Minibar</option>
-                </select>
+                <label for="example5">Tiền cọc</label>
+                <input type="number" class="form-control" id="example5" >
             </div>
             <div class="form-group">
-                <label for="textarea1">Chi tiết phòng</label>
-                <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                <label for="example6">Tiền thanh toán</label>
+                <input type="number" class="form-control" id="example6" >
             </div>
             <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary">Xác nhận</button>
@@ -99,7 +86,7 @@
     </div>
     <div class="col-6">
         <img width="738" height="390"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg">
+             src="https://furamavietnam.com/wp-content/uploads/2023/02/POOL-BEACH-12.png">
     </div>
 </div>
 
