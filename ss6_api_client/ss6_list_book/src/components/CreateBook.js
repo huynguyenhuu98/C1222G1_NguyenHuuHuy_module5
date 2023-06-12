@@ -4,15 +4,11 @@ import {toast} from "react-toastify";
 import {Field, Form, Formik} from "formik";
 import {BallTriangle} from "react-loader-spinner";
 import React from "react";
-import {NavLink} from "react-router-dom";
 
 export function CreateBook() {
     const navigate = useNavigate();
     return (
         <>
-            <NavLink to="/" className="btn btn-outline-success">
-                Home
-            </NavLink>
             <Formik
                 initialValues={{
                     title: '',

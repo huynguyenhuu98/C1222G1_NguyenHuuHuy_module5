@@ -15,14 +15,6 @@ export const create  = async (book) => {
         console.log(error)
     }
 }
-export const deleteBook = async (id) => {
-    try {
-        await axios.delete(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`);
-    } catch (error) {
-        console.log(error);
-        return error;
-    }
-};
 
 export const getById = async (id) => {
     try {

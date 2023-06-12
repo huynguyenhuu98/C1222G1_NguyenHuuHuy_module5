@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Formik, Form, Field} from "formik";
 import * as BookService from "../service/BookService";
 import {toast} from "react-toastify";
-import {useNavigate, useParams, Link} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {BallTriangle} from "react-loader-spinner";
 
 export function UpdateBook() {
@@ -22,9 +22,6 @@ export function UpdateBook() {
 
     return (
         <>
-            <Link to="/" className="btn btn-outline-success">
-                Home
-            </Link>
             <Formik
                 initialValues={{
                     title: title,
@@ -36,6 +33,7 @@ export function UpdateBook() {
                             await BookService.edit(param.id, values)
                             toast("Cập nhật thành công");
                             navigate("/");
+                            console.log(values)
                         } catch (error) {
                             toast("Cập nhật thất bại !");
                         }
