@@ -3,14 +3,14 @@ import {Header} from "./Header";
 import {Footer} from "./Footer";
 import {NavLink} from "react-router-dom";
 
-export function UpdateRoom() {
+export function UpdateFacilities() {
     return (
         <>
             <>
                 <Header/>
             </>
             <>
-                <h3 className="text-center" style={{marginTop: '5rem'}}>Sửa thông tin khách hàng</h3>
+                <h3 className="text-center" style={{marginTop: '7rem'}}>Sửa thông tin khách hàng</h3>
                 <div className="row ms-1 mb-3">
                     <div className="col-5" style={{marginLeft: '2rem'}}>
                         <form>
@@ -51,8 +51,8 @@ export function UpdateRoom() {
                         </form>
                     </div>
                     <div className="col-6">
-                        <img width="738" height="390"
-                             src="https://media.baodautu.vn/Images/ngoctan/2017/08/29/Furama_Resort_Danang_-_Ocean_Pool_2.JPG"
+                        <img width="938" height="500"
+                             src="htts://media.baodautu.vn/Images/ngoctan/2017/08/29/Furama_Resort_Danang_-_Ocean_Pool_2.JPG"
                              alt=''/>
                     </div>
                 </div>

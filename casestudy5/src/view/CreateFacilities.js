@@ -3,14 +3,14 @@ import {Header} from "./Header";
 import {Footer} from "./Footer";
 import {NavLink} from "react-router-dom";
 
-export function CreateRoom() {
+export function CreateFacilities() {
     return (
         <>
             <>
                 <Header/>
             </>
             <>
-                <h3 className="text-center" style={{marginTop: '5rem'}}>Thêm mới phòng</h3>
+                <h3 className="text-center" style={{marginTop: '8rem', marginBottom:'2rem'}}>Thêm mới phòng</h3>
                 <div className="row ms-1 mb-3">
                     <div className="col-5" style={{marginLeft: '2rem'}}>
                         <form>
@@ -66,7 +66,7 @@ export function CreateRoom() {
                         </form>
                     </div>
                     <div className="col-6">
-                        <img width="738" height="390"
+                        <img width="938" height="500"
                              src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg"
                              alt=''/>
                     </div>

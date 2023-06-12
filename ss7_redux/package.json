@@ -1,5 +1,5 @@
 {
-  "name": "ss6_list_book",
+  "name": "ss7_redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,15 +13,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",
+    "react-redux": "^8.0.5",
     "react-router": "^6.12.1",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.2",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
   },
   "scripts": {
-    "json-server": "json-server -p 8080 -w db.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,8 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "axios": "^1.4.0"
   }
 }

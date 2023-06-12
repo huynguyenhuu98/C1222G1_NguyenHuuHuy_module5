@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const findAll  = async () => {
     try {
-        const result = await axios.get('https://my-json-server.typicode.com/codegym-vn/mock-api-books/books')
+        const result = await axios.get('http://localhost:8080/books')
         return result.data
     } catch (error) {
         console.log(error)
@@ -10,7 +10,7 @@ export const findAll  = async () => {
 }
 export const create  = async (book) => {
     try {
-        await axios.post('https://my-json-server.typicode.com/codegym-vn/mock-api-books/books',book)
+        await axios.post('http://localhost:8080/books',book)
     } catch (error) {
         console.log(error)
     }
@@ -18,7 +18,7 @@ export const create  = async (book) => {
 
 export const getById = async (id) => {
     try {
-        const book = await axios.get(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`)
+        const book = await axios.get('http://localhost:8080/books/'+id)
         return book.data
     } catch (error) {
         return error
@@ -27,7 +27,7 @@ export const getById = async (id) => {
 
 export const edit = async (id,book) => {
     try {
-        await axios.put(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`, book)
+        await axios.post('https://localhost:8080/books/'+id, book)
     } catch (error) {
         console.log(error);
         return error

@@ -1,8 +1,8 @@
 import './App.css';
 import React from "react";
 import {Home} from "./view/Home";
-import {CreateRoom} from "./view/CreateRoom";
-import {UpdateRoom} from "./view/UpdateRoom";
+import {CreateFacilities} from "./view/CreateFacilities";
+import {UpdateFacilities} from "./view/UpdateFacilities";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
         <>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path="/create" element={<CreateRoom/>}/>
-                {/*<Route path="/update/:id" element={<UpdateRoom/>}/>*/}
+                <Route path="/create" element={<CreateFacilities/>}/>
+                {/*<Route path="/update/:id" element={<UpdateFacilities/>}/>*/}
             </Routes>
 
         </>
