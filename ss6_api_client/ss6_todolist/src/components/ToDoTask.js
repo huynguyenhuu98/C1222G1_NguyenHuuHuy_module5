@@ -18,7 +18,7 @@ export function ToDoTask() {
                 }}
                 onSubmit={(values, {setSubmitting}) => {
                     const submit = async () => {
-                        await toDoListService.submit(values)
+                        await toDoListService.save(values)
                         setSubmitting(false)
                         toast(`Thông báo hiển thị ${values.title} thành công`);
                         navigate('/')

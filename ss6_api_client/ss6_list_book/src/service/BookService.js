@@ -8,10 +8,36 @@ export const findAll  = async () => {
         console.log(error)
     }
 }
-export const create  = async () => {
+export const create  = async (book) => {
     try {
-        const result = await axios.post('https://my-json-server.typicode.com/codegym-vn/mock-api-books/books')
+        await axios.post('https://my-json-server.typicode.com/codegym-vn/mock-api-books/books',book)
     } catch (error) {
         console.log(error)
+    }
+}
+export const deleteBook = async (id) => {
+    try {
+        await axios.delete(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`);
+    } catch (error) {
+        console.log(error);
+        return error;
+    }
+};
+
+export const getById = async (id) => {
+    try {
+        const book = await axios.get(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`)
+        return book.data
+    } catch (error) {
+        return error
+    }
+}
+
+export const edit = async (id,book) => {
+    try {
+        await axios.put(`https://my-json-server.typicode.com/codegym-vn/mock-api-books/books/${id}`, book)
+    } catch (error) {
+        console.log(error);
+        return error
     }
 }

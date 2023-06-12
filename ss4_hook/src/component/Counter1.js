@@ -1,4 +1,4 @@
-import {useIncrement} from "./useIncrement";
+import {useIncrement} from "./UseIncrement";
 import React from "react";
 
 export function Counter1() {

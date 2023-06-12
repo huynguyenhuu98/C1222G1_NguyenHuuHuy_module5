@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export function Footer() {
     return (
         <>
             <div style={{backgroundColor: '#a3d3e8', color: 'black', padding: '1rem'}}>
@@ -17,5 +17,3 @@ function Footer() {
         </>
     );
 }
-
-export default Footer;

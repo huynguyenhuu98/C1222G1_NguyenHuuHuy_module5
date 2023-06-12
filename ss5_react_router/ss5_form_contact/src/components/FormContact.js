@@ -28,7 +28,7 @@ export function FormContact() {
                     setTimeout(() => {
                         setSubmitting(false)
                         toast(`Contract ${values.name} create success !`)
-                    })
+                    },2000)
                 }}
             >
                 {

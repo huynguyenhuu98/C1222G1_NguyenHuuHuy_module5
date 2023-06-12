@@ -1,10 +1,45 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+import {Header} from "./Header";
+import {Footer} from "./Footer";
 
-function Content() {
+export function Home() {
     return (
         <>
-            <div style={{position: 'relative', left: '0px',boxSizing:'border-box', width: '100%', marginLeft: '0px', marginRight: '0px', marginBottom:'20px'}}>
-                <img src="https://furamavietnam.com/wp-content/uploads/2018/08/banner01.jpg?id=1433" />
+            <Header/>
+            <div className='vc_custom'
+                 style={{position: 'relative', left: '0px', boxSizing: 'border-box', paddingLeft: '0px', paddingRight: '0px', marginBottom: '2rem'}}>
+                <div style={{height: '90px'}}></div>
+                <h2 style={{marginTop: '9rem',fontSize: '40px',color: '#ffffff',textAlign: 'center',fontWeight:'700',fontStyle:'normal'}}>
+                    PHÒNG THUÊ</h2>
+                <div style={{height: '102px'}}></div>
+            </div>
+            <div>
+                <button
+                    type="button"
+                    className="btn btn-success"
+                    style={{
+                        marginBottom: "2%",
+                        marginLeft: "8%",
+                        backgroundColor: "#a5eee6"
+                    }}
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={16}
+                        height={16}
+                        fill="currentColor"
+                        color="black"
+                        className="bi bi-cart4"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>
+                    <NavLink to="/create" className="bi bi-cart4 text-decoration-none"> Thêm phòng mới
+                    </NavLink>
+                </button>
+
             </div>
             <div className="row ">
                 <div className="col-sm-6 col-lg-4 ">
@@ -58,8 +93,7 @@ function Content() {
                     </li>
                 </ul>
             </nav>
+            <Footer/>
         </>
     );
 }
-
-export default Content;
