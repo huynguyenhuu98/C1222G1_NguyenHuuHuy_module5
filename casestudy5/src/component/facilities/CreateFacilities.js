@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {Header} from "./Header";
-import {Footer} from "./Footer";
+import React from "react";
+import {Header} from "../Header";
+import {Footer} from "../Footer";
 import {NavLink} from "react-router-dom";
 
 export function CreateFacilities() {
@@ -58,7 +58,7 @@ export function CreateFacilities() {
                                 <textarea className="form-control" id="textarea1" rows="3"/>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <NavLink to="/" className="btn btn-outline-success">
+                                <NavLink to="/" className="btn btn-outline-success me-2">
                                     Home
                                 </NavLink>
                                 <button type="submit" className="btn btn-outline-primary">Xác nhận</button>
